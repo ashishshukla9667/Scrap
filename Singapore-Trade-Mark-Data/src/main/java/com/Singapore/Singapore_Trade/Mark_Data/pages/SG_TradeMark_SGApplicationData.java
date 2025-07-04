@@ -152,15 +152,15 @@ public class SG_TradeMark_SGApplicationData {
 //        String mark = "LOGO/DEVICE";
 //
 //        try {
-//            // ✅ Step 1: Locate the <img> under "Trade Mark Image" label
+//            //  Step 1: Locate the <img> under "Trade Mark Image" label
 //            WebElement imageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(
 //                    By.xpath("//label[contains(., 'Trade Mark Image')]/following-sibling::div//img")
 //            ));
 //
-//            // ✅ Step 2: Capture screenshot of the actual <img> element
+//            //  Step 2: Capture screenshot of the actual <img> element
 //            File imgScreenshot = imageElement.getScreenshotAs(OutputType.FILE);
 //
-//            // ✅ Step 3: Save the screenshot to resources folder
+//            //  Step 3: Save the screenshot to resources folder
 //            String relativePath = "src/main/resources/marks/" + applicationNumber + ".png";
 //            File outputImage = new File(relativePath);
 //            outputImage.getParentFile().mkdirs();
@@ -173,7 +173,7 @@ public class SG_TradeMark_SGApplicationData {
 //
 //            System.out.println("Image successfully saved at: " + outputImage.getAbsolutePath());
 //
-//            // ✅ Step 4: Send image to OCR API
+//            //  Step 4: Send image to OCR API
 //            String apiUrl = "http://RPA-LoadBalancer-OCR-43099113.eu-west-1.elb.amazonaws.com/ocr/perform-ocr-wipo";
 //            String boundary = UUID.randomUUID().toString();
 //            byte[] requestBody = buildMultipartBody(outputImage, boundary);
